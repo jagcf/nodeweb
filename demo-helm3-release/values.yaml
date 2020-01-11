@@ -1,0 +1,25 @@
+# Default values for go-k8s.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+
+image:
+  repository: 839151377425.dkr.ecr.us-west-2.amazonaws.com/cfcr-demo-ecr-repo
+  tag: nodewebapp.0.0.1
+  pullPolicy: IfNotPresent
+
+service:
+  name: helm3-demo-app-service
+  type: LoadBalancer
+  externalPort: 3000
+  internalPort: 3000
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+
