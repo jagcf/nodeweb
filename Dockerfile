@@ -1,7 +1,7 @@
 FROM node:8.10.0-alpine
 # Create app directory
 ARG COMMENT
-ENV COMMENT
+ENV COMMENT ${COMMENT:-"default value"}
 WORKDIR /usr/src/app
 COPY package*.json ./
 
