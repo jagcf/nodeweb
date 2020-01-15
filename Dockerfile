@@ -1,5 +1,6 @@
 FROM node:8.10.0-alpine
 # Create app directory
+ARG COMMENT
 WORKDIR /usr/src/app
 COPY package*.json ./
 
