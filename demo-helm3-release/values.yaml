@@ -3,10 +3,12 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 
+
 image:
-  repository: r.cfcr.io/jagshetty/helm3demo
-  tag: nodewebapp.0.0.1
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
+  repository: r.cfcr.io/jagshetty/nodeapp
+  tag: latest
+  pullSecret: cfcr
 
 service:
   name: helm3-demo-app-service
