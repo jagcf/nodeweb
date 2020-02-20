@@ -11,8 +11,8 @@ image:
 service:
   name: helm3-demo-app-service
   type: LoadBalancer
-  externalPort: 3000
-  internalPort: 3000
+  externalPort: 80
+  internalPort: 8080
 
 resources:
   limits:
