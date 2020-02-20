@@ -4,7 +4,7 @@
 replicaCount: 1
 
 image:
-  repository: 839151377425.dkr.ecr.us-west-2.amazonaws.com/cfcr-demo-ecr-repo
+  repository: r.cfcr.io/jagshetty/helm3demo
   tag: nodewebapp.0.0.1
   pullPolicy: Always
 
